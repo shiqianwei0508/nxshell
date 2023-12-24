@@ -1,7 +1,7 @@
 # NxShell
-### ![中文介绍](https://github.com/nxshell/nxshell/blob/main/README-zh.md)
+### [中文介绍](https://github.com/nxshell/nxshell/blob/main/README-zh.md)
 
-An easy to use new terminal for Windows/Linux/MacOS platform. It like Xshell or SecureCRT or PuTTY shell client.
+NxShell is the next-generation SSH client, it is cross platform, open source, easy to use, and more.
 
 ## Screenshots
 
@@ -9,14 +9,31 @@ An easy to use new terminal for Windows/Linux/MacOS platform. It like Xshell or 
   <div style="display: flex;justify-content: space-between;">
     <img src="https://raw.githubusercontent.com/nxshell/nxshell/main/screenshots/mac.png" />
   </div>
-  <div style="display: flex;justify-content: space-between;">
-    <img src="https://raw.githubusercontent.com/nxshell/nxshell/main/screenshots/windows.jpg" />
-  </div>
 </div>
 
 More [screenshots](https://github.com/nxshell/nxshell/tree/main/screenshots).
 
+## Develop on source code
+> open an terminal
+```
+git clone https://github.com/nxshell/shell.git
+cd shell
+git clone https://github.com/nxshell/core.git
+cd core && npm i
+cd .. && npm i
+npm run serve
+```
+
+> open other terminal
+```
+node devtools/rundev.js
+```
+
 ## Features
+- In progress: backoup & restore user-defined config files(such as nginx.conf,etc) of Servers.
+- In progress: record commands that have been inputed to Server for security audit.
+- In progress: AI-GPT that can be used to generate shell scripts to manage your Servers by inputing human languages.
+- In progress: UI-interface to view Server status, such as network stream, dist usage, cpu usage, process list.
 
 - Support SSH protocol
 - Support Windows/Linux/MacOS platform
@@ -31,14 +48,22 @@ More [screenshots](https://github.com/nxshell/nxshell/tree/main/screenshots).
 - Support VNC protocol
 - Support Dark/Light theme config
 - Support session FullScreen
- 
-## Future(TODO)
+- Support layout
+- Support send command to ALL open ssh sessions
+- Support Lock/UnLock ops on session
+- Support shortcut ops on session
+- Support SFTP online editor
+- Support lrz/lsz command
 
-- NxShell 2.0
+## Bug report and feature requests
+We collect bug reports and feature requests with GitHub [issues](https://github.com/nxshell/nxshell/issues).
 
-## How to report bug
+For bug report, please read our [guidance](https://github.com/nxshell/nxshell/issues/192) before creating new issue.
+Specifically, please search for related issues before creating a new one to avoid duplicated issues.
 
-Welcome report bug to the [list](https://github.com/nxshell/nxshell/issues)
+For feature request, please comment or vote under [issue#193](https://github.com/nxshell/nxshell/issues/193) for new or existing feature requests.
+We will focus on those most up-voted feature requests.
+
 
 ## How to Install
  * Download from Microsoft App Store. [link](https://www.microsoft.com/store/apps/9N0NP4JJ192W)
@@ -46,17 +71,37 @@ Welcome report bug to the [list](https://github.com/nxshell/nxshell/issues)
  * Download from github release. [link](https://github.com/nxshell/nxshell/releases)
  * Android APP from github release(Alpha).[link](https://github.com/nxshell/nxshell-mobile/releases)
  * Android APP from Google Play.[link](https://play.google.com/store/apps/details?id=com.nxshell.nxshell)
+ * Download package from our Daily build repo. [link](http://106.15.238.81:52080/)
 
-## Contact us
 
-Wechat: yuniot8
+## Future(TODO)
+- Plugins
+- Port to run web browser
 
-QQ Group： 199234440
+## License
+- The NxShell community binary distribution version provides basic SSH/SFTP functions for everyone to use for free, and supports the author to continue to provide useful development tools. Welcome to donate to the NxShell community to continue to grow!
+- If the company/team needs to customize the function and apply it to the private software repository, please contact the author for technical support!
 
-Email: 82828068 At qq.com
+## Language
+Current NxShell Only supports Chinese and English, If you are good at language translation, please contact us.
 
-## Join us
-Current NxShell Only support Chinese and English, If you are good at language translation, please contact us.
+## Real-world Uses
+Welcome to pull request [here](https://github.com/nxshell/nxshell/pulls), who use it in real team/company. We would love to have it in our list.
+ 
+ - NxShell team
+
+
+## Community
+* **GitHub Issues**: bug reports, feature requests, install issues, RFCs, thoughts, etc. [OPEN](https://github.com/nxshell/nxshell/issues/new)
+* **Slack**: Join our workspace to keep in touch with our core contributors and be part of our community. [JOIN HERE ](https://join.slack.com/t/nxshell/shared_invite/zt-1bty01q78-3NA1ZgTMDH1XUan27lMfyA)
+* **QQ Group**: 199234440
+* **Wechat**: yuniot8
+* **Email**: 82828068 At qq.com
+
+## Thanks our Contributors
+<a href="https://github.com/nxshell/shell/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nxshell/shell" />
+</a>
 
 <!--
 **nxshell/nxshell** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

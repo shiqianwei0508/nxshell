@@ -1,0 +1,8 @@
+
+
+prerequests:
+    npm install
+    
+run:
+    npx webpack --watch --cache --mode=development
+    npm start

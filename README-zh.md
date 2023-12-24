@@ -1,22 +1,38 @@
 # NxShell
-一款跨平台的SSH新终端工具,就像当下流行的Xshell/SecureCRT/PuTTY终端一样.但NxShell随着后期功能的迭代完善,会生长出自己独有的终端工具超能力.
-
-# NxShell 操作短视频
-
-<a href="https://www.youtube.com/watch?v=6hfdfg1Bhqo"><img src="https://github.com/nxshell/nxshell/blob/main/screenshots/welcome.jpg" width="100%" height="450" center /></a><br />
+一款跨平台的SSH新终端工具,就像当下流行的PuTTY终端一样.但NxShell随着后期功能的迭代完善,会生长出自己独有的终端工具超能力.
 
 ## 软件界面截图
 
 <div align="center">
   <div style="display: flex;justify-content: space-between;">
-    <img src="https://raw.githubusercontent.com/nxshell/nxshell/main/screenshots/ssh-terminal.png" width="45%" height="350"/>
-    <img src="https://raw.githubusercontent.com/nxshell/nxshell/main/screenshots/sftp-download.png" width="45%" height="350" />
+    <img src="https://raw.githubusercontent.com/nxshell/nxshell/main/screenshots/mac.png" />
   </div>
 </div>
 
 欢迎访问界面截图集 [截图](https://github.com/nxshell/nxshell/tree/main/screenshots).
 
+## 基于源代码开发新功能
+> open an terminal
+```
+git clone https://github.com/nxshell/shell.git
+cd shell
+git clone https://github.com/nxshell/core.git
+cd core && npm i
+cd .. && npm i
+npm run serve
+```
+
+> open other terminal
+```
+node devtools/rundev.js
+```
+
 ## 功能
+- 开发中: 一键备份还原服务器配置文件，比如nginx.conf
+- 开发中: 记录操作命令，用于直接用鼠标点击执行和安全记录
+- 开发中: 支持Windows 远程桌面
+- 开发中: 通过输人内语言，生成shell 脚本，用来协助管理/配置服务器
+- 开发中: 可视化界面，展示服务器状态，如网络流量，磁盘使用率/负载，cpu 负载，进程列表，以及其他机器状态
 
 - 支持SSH/Sftp/ftp/Serial/VNC协议
 - 支持linux/windows/macos多端平台
@@ -26,6 +42,13 @@
 - 支持ssh rz/sz命令文件上传下载
 - 支持终端主题配置
 - 支持终端日志管理
+- 支持分组分屏展示
+- 支持全屏模式
+- 支持同时发送命令到多个打开的ssh会话中
+- 支持会话锁定
+- 支持快捷键操作
+- 支持sftp在线编辑器
+- 支持lrz/lsz文件传输
 
 ## 待开发的功能(TODO)
 
@@ -41,7 +64,12 @@
 * Github官方release下载. [link](https://github.com/nxshell/nxshell/releases)
 * 安卓Alpha应用下载.[link](https://github.com/nxshell/nxshell-mobile/releases)
 * 安卓应用商店下载.[GP link](https://play.google.com/store/apps/details?id=com.nxshell.nxshell)
+* 从daily build 仓库下载安装. [link](http://106.15.238.81:52080/)
 > 由于DMG的Mac包没有签名, 需要右键菜单中的打开运行
+
+## 使用说明
+- NxShell社区二进制分发版本提供基础的SSH/SFTP功能供大家免费使用，支持作者继续提供好用的开发工具，欢迎捐献NxShell社区继续成长！
+- 如有公司/团队需要定制功能以及应用到私有软件仓库，请联系作者提供技术支持！
 
 ## 联系我们
 
@@ -53,6 +81,16 @@ QQ群： 199234440
 
 ## 支持NxShell
 当前NxShell仅支持中文和英语两种语言，如果您有其它语言优势，欢迎加入我们一起翻译更多的语言包(日语、德语、法语、英语等)
+
+## 用户案例
+欢迎提交用户案例到这里 [here](https://github.com/nxshell/nxshell/pulls), 不论是团队或公司.
+ - NxShell team
+ - ...
+
+## 感谢贡献者
+<a href="https://github.com/nxshell/shell/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nxshell/shell" />
+</a>
 
 <!--
 **nxshell/nxshell** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
